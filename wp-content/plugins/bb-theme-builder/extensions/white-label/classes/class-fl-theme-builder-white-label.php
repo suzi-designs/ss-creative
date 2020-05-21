@@ -30,8 +30,8 @@ final class FLThemeBuilderWhiteLabel {
 		}
 
 		$defaults = array(
-			__( 'Beaver Builder', 'fl-builder' ),
-			__( 'Page Builder', 'fl-builder' ),
+			__( 'Beaver Builder', 'bb-theme-builder' ),
+			__( 'Page Builder', 'bb-theme-builder' ),
 		);
 
 		return ! in_array( FLBuilderModel::get_branding(), $defaults );

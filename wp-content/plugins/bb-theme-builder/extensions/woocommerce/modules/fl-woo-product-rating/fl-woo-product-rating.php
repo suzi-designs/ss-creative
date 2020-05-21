@@ -78,7 +78,7 @@ FLBuilder::register_module( 'FLWooProductRatingModule', array(
 							'selector' => '.fl-module-content .star-rating:before',
 							'property' => 'color',
 						),
-						'help'       => __( 'Controls the background color of the rating symbols.', 'fl-builder' ),
+						'help'       => __( 'Controls the background color of the rating symbols.', 'bb-theme-builder' ),
 					),
 				),
 			),

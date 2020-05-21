@@ -364,16 +364,21 @@ final class FLThemeBuilderLayoutRenderer {
 
 		$settings = FLThemeBuilderLayoutData::get_settings( $ids[0] );
 
-		FLBuilder::render_content_by_id( $ids[0], $tag, array(
-			'itemscope'              => 'itemscope',
-			'itemtype'               => 'http://schema.org/WPHeader',
+		$attrs = array(
 			'data-type'              => 'header',
 			'data-sticky'            => $settings['sticky'],
 			'data-sticky-breakpoint' => apply_filters( 'fl_theme_builder_sticky_header_breakpoint', 'medium' ),
 			'data-shrink'            => $settings['shrink'],
 			'data-overlay'           => $settings['overlay'],
 			'data-overlay-bg'        => $settings['overlay_bg'],
-		) );
+		);
+
+		if ( self::is_schema_enabled() ) {
+			$attrs['itemscope'] = 'itemscope';
+			$attrs['itemtype']  = 'http://schema.org/WPHeader';
+		}
+
+		FLBuilder::render_content_by_id( $ids[0], $tag, $attrs );
 
 		do_action( 'fl_theme_builder_after_render_header', $ids[0] );
 
@@ -453,11 +458,16 @@ final class FLThemeBuilderLayoutRenderer {
 
 		do_action( 'fl_theme_builder_before_render_footer', $ids[0] );
 
-		FLBuilder::render_content_by_id( $ids[0], $tag, array(
-			'itemscope' => 'itemscope',
-			'itemtype'  => 'http://schema.org/WPFooter',
+		$attrs = array(
 			'data-type' => 'footer',
-		) );
+		);
+
+		if ( self::is_schema_enabled() ) {
+			$attrs['itemscope'] = 'itemscope';
+			$attrs['itemtype']  = 'http://schema.org/WPFooter';
+		}
+
+		FLBuilder::render_content_by_id( $ids[0], $tag, $attrs );
 
 		do_action( 'fl_theme_builder_after_render_footer', $ids[0] );
 
@@ -500,6 +510,22 @@ final class FLThemeBuilderLayoutRenderer {
 	 */
 	static public function override_the_content( $content ) {
 		return '<div style="padding: 200px 100px; text-align:center; opacity:0.5;">' . __( 'Content Area', 'bb-theme-builder' ) . '</div>';
+	}
+
+	/**
+	 * @since 1.3.1
+	 */
+	static public function is_schema_enabled() {
+
+		/**
+		 * Disable all schema.
+		 * @see fl_theme_builder_disable_schema
+		 */
+		if ( false !== apply_filters( 'fl_theme_builder_disable_schema', false ) ) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 }
 

@@ -85,6 +85,8 @@ final class FLThemeBuilderTheEventsCalendarArchive {
 	 */
 	static public function builder_loop_query( $query, $settings ) {
 
+		global $wp_query;
+
 		if ( isset( $settings->data_source ) && 'main_query' == $settings->data_source ) {
 
 			$compare = '>=';
@@ -130,7 +132,7 @@ final class FLThemeBuilderTheEventsCalendarArchive {
 					),
 				);
 			}
-			$query = new WP_Query( $query );
+			$query = new WP_Query( array_merge( $wp_query->query_vars, $query ) );
 		}
 		return $query;
 	}

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bb-theme-builder\n"
 "Report-Msgid-Bugs-To: hello@wpbeaverbuilder.com\n"
-"POT-Creation-Date: 2020-02-13 19:28:05+00:00\n"
+"POT-Creation-Date: 2020-05-05 19:54:34+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,6 +16,7 @@ msgstr ""
 "__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
 "attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
 
+#: classes/class-fl-theme-builder-logic-i18n.php:193
 #: includes/layout-admin-add-fields.php:14
 msgid "404"
 msgstr ""
@@ -45,6 +46,8 @@ msgid "Pages:"
 msgstr ""
 
 #: classes/class-fl-page-data-site.php:52 classes/class-fl-page-data.php:98
+#: classes/class-fl-theme-builder-logic-i18n.php:116
+#: classes/class-fl-theme-builder-logic-i18n.php:129
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:146
 #: extensions/acf/includes/page-data-acf.php:386
 msgid "User"
@@ -63,7 +66,7 @@ msgid "User ID"
 msgstr ""
 
 #: classes/class-fl-page-data.php:80
-#: classes/class-fl-theme-builder-rules-location.php:684
+#: classes/class-fl-theme-builder-rules-location.php:691
 #: classes/class-fl-theme-builder-rules-user.php:167
 #: extensions/themes/classes/class-fl-theme-builder-support-storefront.php:40
 #: extensions/woocommerce/modules/fl-woo-product-description/fl-woo-product-description.php:29
@@ -93,6 +96,8 @@ msgid "Comments"
 msgstr ""
 
 #: classes/class-fl-page-data.php:92
+#: classes/class-fl-theme-builder-logic-i18n.php:110
+#: classes/class-fl-theme-builder-logic-i18n.php:128
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:176
 #: modules/fl-post-info/fl-post-info.php:104
 #: modules/fl-post-info/fl-post-info.php:108
@@ -132,8 +137,8 @@ msgstr ""
 msgid "Themer Layouts"
 msgstr ""
 
-#: classes/class-fl-theme-builder-field-connections.php:548
 #: classes/class-fl-theme-builder-field-connections.php:554
+#: classes/class-fl-theme-builder-field-connections.php:560
 msgid "Incorrect wpbb-if shortcode attributes."
 msgstr ""
 
@@ -154,6 +159,7 @@ msgid "Themer Layout"
 msgstr ""
 
 #: classes/class-fl-theme-builder-layout-admin-edit.php:98
+#: classes/class-fl-theme-builder-logic-i18n.php:183
 #: includes/admin-edit-location-rules.php:37
 #: includes/admin-edit-location-rules.php:47
 #: includes/admin-edit-user-rules.php:21
@@ -219,37 +225,723 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: classes/class-fl-theme-builder-layout-renderer.php:502
+#: classes/class-fl-theme-builder-layout-renderer.php:512
 #: modules/fl-post-content/includes/frontend.php:6
 msgid "Content Area"
 msgstr ""
 
-#: classes/class-fl-theme-builder-loader.php:232
+#: classes/class-fl-theme-builder-loader.php:233
 #. translators: %s: url
 msgid ""
 "The Beaver Builder plugin must be active in order to use Beaver Themer. "
 "Please <a href=\"%s\">activate it</a> before continuing."
 msgstr ""
 
-#: classes/class-fl-theme-builder-loader.php:236
+#: classes/class-fl-theme-builder-loader.php:237
 #. translators: %s: url
 msgid ""
 "Beaver Themer is not compatible with the lite version of Beaver Builder. "
 "Please <a href=\"%s\">purchase a premium version</a> before continuing."
 msgstr ""
 
-#: classes/class-fl-theme-builder-loader.php:240
+#: classes/class-fl-theme-builder-loader.php:241
 #. translators: %s: url
 msgid ""
 "Beaver Themer is only compatible with Beaver Builder 1.10 and above. Please "
 "<a href=\"%s\">update</a> before continuing."
 msgstr ""
 
-#: classes/class-fl-theme-builder-loader.php:244
+#: classes/class-fl-theme-builder-loader.php:245
 #. translators: %s: url
 msgid ""
 "Beaver Themer requires PHP 5.3 or above. Please <a href=\"%s\">update your "
 "PHP version</a> before continuing."
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:32
+msgid "Display this content if the following conditions are met..."
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:33
+msgid "address line 1"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:34
+msgid "address line 2"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:35
+msgid "city"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:36
+msgid "state"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:37
+msgid "zip/postcode"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:38
+msgid "country"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:39
+msgid "minute(s) ago"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:40
+msgid "hour(s) ago"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:41
+msgid "day(s) ago"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:42
+msgid "week(s) ago"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:43
+msgid "month(s) ago"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:44
+msgid "year(s) ago"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:45
+msgid "minute(s)"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:46
+msgid "hour(s)"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:47
+msgid "day(s)"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:48
+msgid "week(s)"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:49
+msgid "month(s)"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:50
+msgid "year(s)"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:51
+#: extensions/acf/classes/class-fl-theme-builder-acf.php:157
+#: includes/page-data-archive.php:53 includes/page-data-post.php:536
+#: includes/page-data-post.php:553 includes/page-data-site.php:201
+msgid "Key"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:52
+msgid "Value"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:53
+msgid "equals"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:54
+msgid "does not equal"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:55
+msgid "is less than"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:56
+msgid "is less than or equal to"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:57
+msgid "is greater than"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:58
+msgid "is greater than or equal to"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:59
+msgid "starts with"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:60
+msgid "ends with"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:61
+msgid "contains"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:62
+msgid "does not contain"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:63
+msgid "include"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:64
+msgid "includes"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:65
+msgid "do not include"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:66
+msgid "does not include"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:67
+msgid "is set"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:68
+msgid "is not set"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:69
+msgid "is empty"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:70
+msgid "is not empty"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:71
+msgid "on"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:72
+msgid "is on"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:73
+msgid "not on"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:74
+msgid "is not on"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:75
+msgid "before"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:76
+msgid "is before"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:77
+msgid "on or before"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:78
+msgid "is on or before"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:79
+msgid "after"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:80
+msgid "is after"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:81
+msgid "on or after"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:82
+msgid "is on or after"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:83
+msgid "within"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:84
+msgid "is within"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:85
+msgid "not within"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:86
+msgid "is not within"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:87
+msgid "between"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:88
+msgid "is between"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:89
+msgid "not between"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:90
+msgid "is not between"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:91
+msgid "in the past"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:92
+msgid "over"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:93
+#: classes/class-fl-theme-builder-logic-i18n.php:126
+#: extensions/themes/classes/class-fl-theme-builder-support-storefront.php:102
+msgid "Post"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:94
+msgid "Post Parent"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:95
+msgid "Post Type"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:96
+#: includes/page-data-post.php:7 includes/page-data-post.php:78
+#: modules/fl-post-title/fl-post-title.php:10
+msgid "Post Title"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:97
+#: includes/page-data-post.php:28
+msgid "Post Excerpt"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:98
+#: extensions/themes/classes/class-fl-theme-builder-support-genesis.php:78
+#: includes/page-data-post.php:55
+#: modules/fl-post-content/fl-post-content.php:14
+msgid "Post Content"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:99
+#: includes/page-data-post.php:177 includes/page-data-post.php:237
+msgid "Post Featured Image"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:100
+msgid "Post Comments Number"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:101
+msgid "Post Template"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:102
+msgid "Post Taxonomy Term"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:103
+msgid "Post Status"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:104
+#: includes/page-data-post.php:544
+msgid "Post Custom Field"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:105
+#: classes/class-fl-theme-builder-logic-i18n.php:127
+#: includes/layout-admin-add-fields.php:12
+msgid "Archive"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:106
+#: includes/page-data-archive.php:7
+#: modules/fl-archive-title/fl-archive-title.php:10
+msgid "Archive Title"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:107
+#: includes/page-data-archive.php:17
+#: modules/fl-archive-description/fl-archive-description.php:14
+msgid "Archive Description"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:108
+msgid "Archive Taxonomy Term"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:109
+#: includes/page-data-archive.php:44
+msgid "Archive Term Meta"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:111
+#: classes/class-fl-theme-builder-logic-i18n.php:117
+#: extensions/acf/includes/page-data-acf.php:411
+#: includes/page-data-post.php:392 includes/page-data-site.php:55
+msgid "Username"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:112
+#: includes/page-data-post.php:425 modules/fl-author-bio/fl-author-bio.php:14
+msgid "Author Bio"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:113
+#: includes/page-data-post.php:527
+msgid "Author Meta"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:114
+msgid "Author Login Status"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:115
+msgid "Author Role"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:118
+#: includes/page-data-site.php:88
+msgid "User Bio"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:119
+#: includes/page-data-site.php:192
+msgid "User Meta"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:120
+msgid "User Login Status"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:121
+#: classes/class-fl-theme-builder-rules-user.php:176
+msgid "Logged In"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:122
+#: classes/class-fl-theme-builder-rules-user.php:181
+msgid "Logged Out"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:123
+msgid "User Role"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:124
+msgid "User Capability"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:125
+msgid "User Registered"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:130
+#: extensions/acf/includes/page-data-acf.php:7
+msgid "ACF Archive Field"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:131
+#: extensions/acf/includes/page-data-acf.php:14
+msgid "ACF Post Field"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:132
+#: extensions/acf/includes/page-data-acf.php:21
+msgid "ACF Post Author Field"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:133
+#: extensions/acf/includes/page-data-acf.php:28
+msgid "ACF User Field"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:134
+#: extensions/acf/includes/page-data-acf.php:35
+msgid "ACF Option Field"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:135
+#: extensions/acf/classes/class-fl-page-data-acf.php:16
+msgid "Advanced Custom Fields"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:136
+msgid "Customer Products Purchased"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:137
+msgid "Customer First Ordered"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:138
+msgid "Customer Last Ordered"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:139
+msgid "Customer Total Orders"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:140
+msgid "Customer Total Products"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:141
+msgid "Customer Total Spent"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:142
+msgid "Customer Billing Address"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:143
+msgid "Customer Shipping Address"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:144
+msgid "Cart"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:145
+msgid "Cart Products"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:146
+msgid "Cart Total"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:147
+#: extensions/woocommerce/classes/class-fl-page-data-woocommerce.php:16
+#: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:295
+#: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:358
+#: extensions/woocommerce/modules/fl-woo-breadcrumb/fl-woo-breadcrumb.php:18
+#: extensions/woocommerce/modules/fl-woo-cart-button/fl-woo-cart-button.php:18
+#: extensions/woocommerce/modules/fl-woo-product-description/fl-woo-product-description.php:18
+#: extensions/woocommerce/modules/fl-woo-product-images/fl-woo-product-images.php:18
+#: extensions/woocommerce/modules/fl-woo-product-meta/fl-woo-product-meta.php:18
+#: extensions/woocommerce/modules/fl-woo-product-price/fl-woo-product-price.php:18
+#: extensions/woocommerce/modules/fl-woo-product-rating/fl-woo-product-rating.php:18
+#: extensions/woocommerce/modules/fl-woo-product-tabs/fl-woo-product-tabs.php:18
+#: extensions/woocommerce/modules/fl-woo-product-title/fl-woo-product-title.php:18
+#: extensions/woocommerce/modules/fl-woo-product-upsells/fl-woo-product-upsells.php:18
+#: extensions/woocommerce/modules/fl-woo-products/fl-woo-products.php:13
+#: extensions/woocommerce/modules/fl-woo-related-products/fl-woo-related-products.php:18
+msgid "WooCommerce"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:148
+msgid "User Search History"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:149
+msgid "User Last Visited"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:150
+msgid "User Total Visits"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:151
+msgid "Behavior"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:152
+msgid "Cookie"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:153
+msgid "Referer"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:154
+msgid "URL Variable"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:155
+msgid "Browser"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:156
+msgid "Country"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:157
+msgid "State"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:158
+msgid "Geolocation"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:159
+#: classes/class-fl-theme-builder-logic-i18n.php:182
+msgid "Date and Time"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:160
+#: extensions/acf/classes/class-fl-theme-builder-acf.php:178
+#: modules/fl-post-info/fl-post-info.php:33
+#: modules/fl-post-info/fl-post-info.php:37
+#: modules/fl-post-info/fl-post-info.php:233
+msgid "Date"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:161
+msgid "Month"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:162
+msgid "January"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:163
+msgid "February"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:164
+msgid "March"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:165
+msgid "April"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:166
+msgid "May"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:167
+msgid "June"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:168
+msgid "July"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:169
+msgid "August"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:170
+msgid "September"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:171
+msgid "October"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:172
+msgid "November"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:173
+msgid "December"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:174
+msgid "Day"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:175
+msgid "Sunday"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:176
+msgid "Monday"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:177
+msgid "Tuesday"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:178
+msgid "Wednesday"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:179
+msgid "Thursday"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:180
+msgid "Friday"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:181
+msgid "Saturday"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:184
+#: classes/class-fl-theme-builder-logic-i18n.php:190
+msgid "Add Rule Group"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:185
+msgid "or"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:186
+msgid "Add Rule"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:187
+msgid "Cancel"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:188
+msgid "Save"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:189
+msgid "Conditional Logic Settings"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:191
+msgid "Rules"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:192
+msgid "Conditional Tag"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:194
+msgid "Home"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:195
+msgid "Front Page"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:196
+msgid "Taxonomy Archive"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:197
+#: classes/class-fl-theme-builder-rules-location.php:720
+#: classes/class-fl-theme-builder-rules-location.php:1216
+msgid "Search Results"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:198
+msgid "WordPress Conditionals"
+msgstr ""
+
+#: classes/class-fl-theme-builder-logic-i18n.php:199
+msgid "Additional rules to determine if this layout should be displayed."
 msgstr ""
 
 #: classes/class-fl-theme-builder-post-modules.php:55
@@ -257,7 +949,7 @@ msgid "Post Layout"
 msgstr ""
 
 #: classes/class-fl-theme-builder-post-modules.php:58
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:196
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:275
 #: includes/layout-admin-edit-settings.php:96 includes/page-data-post.php:130
 #: includes/page-data-post.php:159 includes/page-data-post.php:215
 #: modules/fl-post-info/fl-post-info.php:49
@@ -287,51 +979,38 @@ msgstr ""
 msgid "Must be called on or after the wp action."
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:688
+#: classes/class-fl-theme-builder-rules-location.php:695
 msgid "Entire Site"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:693
+#: classes/class-fl-theme-builder-rules-location.php:700
 msgid "All Singular"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:698
+#: classes/class-fl-theme-builder-rules-location.php:705
 msgid "All Archives"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:703
-#: classes/class-fl-theme-builder-rules-location.php:1217
+#: classes/class-fl-theme-builder-rules-location.php:710
+#: classes/class-fl-theme-builder-rules-location.php:1224
 msgid "Author Archives"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:708
+#: classes/class-fl-theme-builder-rules-location.php:715
 msgid "Date Archives"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:713
-#: classes/class-fl-theme-builder-rules-location.php:1209
-msgid "Search Results"
-msgstr ""
-
-#: classes/class-fl-theme-builder-rules-location.php:718
+#: classes/class-fl-theme-builder-rules-location.php:725
 msgid "404 Page"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:1157
-#: classes/class-fl-theme-builder-rules-location.php:1536
+#: classes/class-fl-theme-builder-rules-location.php:1164
+#: classes/class-fl-theme-builder-rules-location.php:1543
 msgid "None"
 msgstr ""
 
 #: classes/class-fl-theme-builder-rules-user.php:171
 msgid "All Users"
-msgstr ""
-
-#: classes/class-fl-theme-builder-rules-user.php:176
-msgid "Logged In"
-msgstr ""
-
-#: classes/class-fl-theme-builder-rules-user.php:181
-msgid "Logged Out"
 msgstr ""
 
 #: classes/class-fl-theme-builder-rules-user.php:187
@@ -350,22 +1029,12 @@ msgstr ""
 msgid "The selected roles will be able to edit Themer layouts."
 msgstr ""
 
-#: extensions/acf/classes/class-fl-page-data-acf.php:16
-msgid "Advanced Custom Fields"
-msgstr ""
-
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:38
 msgid "ACF Relationship"
 msgstr ""
 
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:145
 msgid "Relationship"
-msgstr ""
-
-#: extensions/acf/classes/class-fl-theme-builder-acf.php:157
-#: includes/page-data-archive.php:53 includes/page-data-post.php:536
-#: includes/page-data-post.php:553 includes/page-data-site.php:201
-msgid "Key"
 msgstr ""
 
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:163
@@ -375,12 +1044,12 @@ msgid "Order"
 msgstr ""
 
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:165
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:207
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:286
 msgid "Descending"
 msgstr ""
 
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:166
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:206
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:285
 msgid "Ascending"
 msgstr ""
 
@@ -390,13 +1059,6 @@ msgstr ""
 
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:177
 msgid "Comment Count"
-msgstr ""
-
-#: extensions/acf/classes/class-fl-theme-builder-acf.php:178
-#: modules/fl-post-info/fl-post-info.php:33
-#: modules/fl-post-info/fl-post-info.php:37
-#: modules/fl-post-info/fl-post-info.php:233
-msgid "Date"
 msgstr ""
 
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:179
@@ -434,26 +1096,6 @@ msgstr ""
 
 #: extensions/acf/classes/class-fl-theme-builder-acf.php:201
 msgid "Meta Key"
-msgstr ""
-
-#: extensions/acf/includes/page-data-acf.php:7
-msgid "ACF Archive Field"
-msgstr ""
-
-#: extensions/acf/includes/page-data-acf.php:14
-msgid "ACF Post Field"
-msgstr ""
-
-#: extensions/acf/includes/page-data-acf.php:21
-msgid "ACF Post Author Field"
-msgstr ""
-
-#: extensions/acf/includes/page-data-acf.php:28
-msgid "ACF User Field"
-msgstr ""
-
-#: extensions/acf/includes/page-data-acf.php:35
-msgid "ACF Option Field"
 msgstr ""
 
 #: extensions/acf/includes/page-data-acf.php:44
@@ -557,7 +1199,7 @@ msgstr ""
 #: extensions/acf/includes/page-data-acf.php:248
 #: extensions/acf/includes/page-data-acf.php:360
 #: extensions/acf/includes/page-data-acf.php:398
-#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:334
+#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:354
 msgid "Field Name"
 msgstr ""
 
@@ -716,11 +1358,6 @@ msgstr ""
 #: extensions/acf/includes/page-data-acf.php:410
 #: includes/page-data-post.php:391 includes/page-data-site.php:54
 msgid "Nickname"
-msgstr ""
-
-#: extensions/acf/includes/page-data-acf.php:411
-#: includes/page-data-post.php:392 includes/page-data-site.php:55
-msgid "Username"
 msgstr ""
 
 #: extensions/acf/includes/page-data-acf.php:416
@@ -886,10 +1523,10 @@ msgstr ""
 #: extensions/bigcommerce/settings/refinery.php:9
 #: extensions/edd/classes/class-fl-theme-builder-edd-archive.php:151
 #: extensions/edd/classes/class-fl-theme-builder-edd-archive.php:160
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:160
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:169
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:178
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:187
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:239
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:248
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:257
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:266
 #: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:302
 #: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:311
 #: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:320
@@ -914,10 +1551,10 @@ msgstr ""
 #: extensions/bigcommerce/settings/refinery.php:10
 #: extensions/edd/classes/class-fl-theme-builder-edd-archive.php:152
 #: extensions/edd/classes/class-fl-theme-builder-edd-archive.php:161
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:161
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:170
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:179
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:188
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:240
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:249
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:258
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:267
 #: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:303
 #: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:312
 #: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:321
@@ -1392,7 +2029,7 @@ msgstr ""
 #: extensions/bigcommerce/settings/sale-badge.php:5
 #: extensions/edd/classes/class-fl-theme-builder-edd-archive.php:191
 #: extensions/edd/modules/fl-edd-cart-button/fl-edd-cart-button.php:36
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:218
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:308
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-archive-view/fl-the-events-calendar-archive-view.php:42
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-archive-view/fl-the-events-calendar-archive-view.php:61
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-export-links/fl-the-events-calendar-export-links.php:56
@@ -1414,7 +2051,7 @@ msgid "Cart Form Label Text"
 msgstr ""
 
 #: extensions/bigcommerce/settings/cart/form.php:6
-msgid "Labels for cart form, i.e. \"Quantity\""
+msgid "Labels for Cart Form, i.e. \"Quantity\""
 msgstr ""
 
 #: extensions/bigcommerce/settings/cart/form.php:15
@@ -1432,7 +2069,7 @@ msgstr ""
 #: extensions/edd/modules/fl-edd-cart-button/fl-edd-cart-button.php:41
 #: extensions/edd/modules/fl-edd-product-price/fl-edd-product-price.php:64
 #: extensions/edd/modules/fl-edd-product-title/fl-edd-product-title.php:76
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:224
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:314
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-archive-view/fl-the-events-calendar-archive-view.php:53
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-export-links/fl-the-events-calendar-export-links.php:51
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-notices/fl-the-events-calendar-notices.php:36
@@ -1624,7 +2261,7 @@ msgid "Font"
 msgstr ""
 
 #: extensions/the-events-calendar/classes/class-fl-page-data-the-events-calendar.php:16
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:153
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:232
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-archive-view/fl-the-events-calendar-archive-view.php:18
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-back-link/fl-the-events-calendar-link.php:13
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-cost/fl-the-events-calendar-cost.php:13
@@ -1646,48 +2283,68 @@ msgstr ""
 msgid "The Events Calendar"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-page-data-the-events-calendar.php:123
+#: extensions/the-events-calendar/classes/class-fl-page-data-the-events-calendar.php:139
 msgid "&laquo; All Events"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:157
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:236
 msgid "Event Date"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:166
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:245
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:203
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-venue/fl-the-events-calendar-venue.php:15
 msgid "Event Venue"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:175
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:254
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:143
 msgid "Event Address"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:184
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:263
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:83
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-cost/fl-the-events-calendar-cost.php:10
 msgid "Event Cost"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:193
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:272
 msgid "Events Order By"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:197
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:276
 msgid "Start Date"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:198
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:277
 msgid "End Date"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:203
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:282
 msgid "Events Order"
 msgstr ""
 
-#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:214
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:291
+msgid "Show Events"
+msgstr ""
+
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:294
+msgid "Future Events"
+msgstr ""
+
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:295
+msgid "Past Events"
+msgstr ""
+
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:296
+msgid "Todays Events"
+msgstr ""
+
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:297
+msgid "All Events"
+msgstr ""
+
+#: extensions/the-events-calendar/classes/class-fl-theme-builder-the-events-calendar-archive.php:304
 msgid "The Events Calendar Cart Button"
 msgstr ""
 
@@ -1759,60 +2416,68 @@ msgid "Event Phone"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:213
-msgid "Event Venue URL"
+msgid "Event Venue Content"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:223
-msgid "Event Venue Link"
+msgid "Event Venue URL"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:233
-msgid "Event Venue Website URL"
+msgid "Event Venue Link"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:243
-msgid "Event Venue Website Link"
+msgid "Event Venue Website URL"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:253
+msgid "Event Venue Website Link"
+msgstr ""
+
+#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:263
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-organizer/fl-the-events-calendar-organizer.php:15
 msgid "Event Organizer"
 msgstr ""
 
-#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:263
-msgid "Event Organizer URL"
-msgstr ""
-
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:273
-msgid "Event Organizer Link"
+msgid "Event Organizer Content"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:283
-msgid "Event Organizer Website URL"
+msgid "Event Organizer URL"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:293
-msgid "Event Organizer Website Link"
+msgid "Event Organizer Link"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:303
-msgid "Event Organizer Phone"
+msgid "Event Organizer Website URL"
 msgstr ""
 
 #: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:313
+msgid "Event Organizer Website Link"
+msgstr ""
+
+#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:323
+msgid "Event Organizer Phone"
+msgstr ""
+
+#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:333
 msgid "Event Organizer Email"
 msgstr ""
 
-#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:325
+#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:345
 msgid "Event Field"
 msgstr ""
 
-#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:343
+#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:363
 #: extensions/the-events-calendar/modules/fl-the-events-calendar-back-link/fl-the-events-calendar-link.php:10
 msgid "Events Back Link"
 msgstr ""
 
-#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:353
+#: extensions/the-events-calendar/includes/page-data-the-events-calendar.php:373
 msgid "Events Back URL"
 msgstr ""
 
@@ -2231,12 +2896,6 @@ msgstr ""
 msgid "Post Header"
 msgstr ""
 
-#: extensions/themes/classes/class-fl-theme-builder-support-genesis.php:78
-#: includes/page-data-post.php:55
-#: modules/fl-post-content/fl-post-content.php:14
-msgid "Post Content"
-msgstr ""
-
 #: extensions/themes/classes/class-fl-theme-builder-support-genesis.php:79
 msgid "Post Footer"
 msgstr ""
@@ -2335,10 +2994,6 @@ msgstr ""
 msgid "Post Top"
 msgstr ""
 
-#: extensions/themes/classes/class-fl-theme-builder-support-storefront.php:102
-msgid "Post"
-msgstr ""
-
 #: extensions/themes/classes/class-fl-theme-builder-support-storefront.php:103
 msgid "Post Bottom"
 msgstr ""
@@ -2369,24 +3024,6 @@ msgstr ""
 
 #: extensions/white-label/classes/class-fl-theme-builder-white-label.php:34
 msgid "Page Builder"
-msgstr ""
-
-#: extensions/woocommerce/classes/class-fl-page-data-woocommerce.php:16
-#: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:295
-#: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:358
-#: extensions/woocommerce/modules/fl-woo-breadcrumb/fl-woo-breadcrumb.php:18
-#: extensions/woocommerce/modules/fl-woo-cart-button/fl-woo-cart-button.php:18
-#: extensions/woocommerce/modules/fl-woo-product-description/fl-woo-product-description.php:18
-#: extensions/woocommerce/modules/fl-woo-product-images/fl-woo-product-images.php:18
-#: extensions/woocommerce/modules/fl-woo-product-meta/fl-woo-product-meta.php:18
-#: extensions/woocommerce/modules/fl-woo-product-price/fl-woo-product-price.php:18
-#: extensions/woocommerce/modules/fl-woo-product-rating/fl-woo-product-rating.php:18
-#: extensions/woocommerce/modules/fl-woo-product-tabs/fl-woo-product-tabs.php:18
-#: extensions/woocommerce/modules/fl-woo-product-title/fl-woo-product-title.php:18
-#: extensions/woocommerce/modules/fl-woo-product-upsells/fl-woo-product-upsells.php:18
-#: extensions/woocommerce/modules/fl-woo-products/fl-woo-products.php:13
-#: extensions/woocommerce/modules/fl-woo-related-products/fl-woo-related-products.php:18
-msgid "WooCommerce"
 msgstr ""
 
 #: extensions/woocommerce/classes/class-fl-theme-builder-woocommerce-archive.php:299
@@ -2624,10 +3261,6 @@ msgstr ""
 msgid "(Unsupported)"
 msgstr ""
 
-#: includes/layout-admin-add-fields.php:12
-msgid "Archive"
-msgstr ""
-
 #: includes/layout-admin-add-fields.php:13
 msgid "Singular"
 msgstr ""
@@ -2688,16 +3321,6 @@ msgstr ""
 msgid "Transparent"
 msgstr ""
 
-#: includes/page-data-archive.php:7
-#: modules/fl-archive-title/fl-archive-title.php:10
-msgid "Archive Title"
-msgstr ""
-
-#: includes/page-data-archive.php:17
-#: modules/fl-archive-description/fl-archive-description.php:14
-msgid "Archive Description"
-msgstr ""
-
 #: includes/page-data-archive.php:27
 msgid "Archive Count (Showing 1-5 of 25.)"
 msgstr ""
@@ -2706,21 +3329,8 @@ msgstr ""
 msgid "Archive Page Count (Page 1 of 3.)"
 msgstr ""
 
-#: includes/page-data-archive.php:44
-msgid "Archive Term Meta"
-msgstr ""
-
-#: includes/page-data-post.php:7 includes/page-data-post.php:78
-#: modules/fl-post-title/fl-post-title.php:10
-msgid "Post Title"
-msgstr ""
-
 #: includes/page-data-post.php:18
 msgid "Post ID"
-msgstr ""
-
-#: includes/page-data-post.php:28
-msgid "Post Excerpt"
 msgstr ""
 
 #: includes/page-data-post.php:38
@@ -2773,10 +3383,6 @@ msgstr ""
 
 #: includes/page-data-post.php:168 modules/fl-post-info/fl-post-info.php:93
 msgid "3 days ago"
-msgstr ""
-
-#: includes/page-data-post.php:177 includes/page-data-post.php:237
-msgid "Post Featured Image"
 msgstr ""
 
 #: includes/page-data-post.php:191
@@ -2894,24 +3500,12 @@ msgstr ""
 msgid "Author Name"
 msgstr ""
 
-#: includes/page-data-post.php:425 modules/fl-author-bio/fl-author-bio.php:14
-msgid "Author Bio"
-msgstr ""
-
 #: includes/page-data-post.php:435
 msgid "Author URL"
 msgstr ""
 
 #: includes/page-data-post.php:457 includes/page-data-post.php:502
 msgid "Author Picture"
-msgstr ""
-
-#: includes/page-data-post.php:527
-msgid "Author Meta"
-msgstr ""
-
-#: includes/page-data-post.php:544
-msgid "Post Custom Field"
 msgstr ""
 
 #: includes/page-data-site.php:7
@@ -2934,20 +3528,12 @@ msgstr ""
 msgid "Link to the archive or website for this user."
 msgstr ""
 
-#: includes/page-data-site.php:88
-msgid "User Bio"
-msgstr ""
-
 #: includes/page-data-site.php:100
 msgid "User URL"
 msgstr ""
 
 #: includes/page-data-site.php:122 includes/page-data-site.php:167
 msgid "User Picture"
-msgstr ""
-
-#: includes/page-data-site.php:192
-msgid "User Meta"
 msgstr ""
 
 #: includes/page-data-site.php:210
@@ -3275,31 +3861,31 @@ msgctxt "Custom post type label."
 msgid "No Themer layouts found in Trash."
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:769
+#: classes/class-fl-theme-builder-rules-location.php:776
 #. translators: %s: singlular post type name
 msgctxt "%s is a singular post type name"
 msgid "%s Parent"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:778
+#: classes/class-fl-theme-builder-rules-location.php:785
 #. translators: %s: singlular post type name
 msgctxt "%s is a singular post type name"
 msgid "%s Ancestor"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:787
+#: classes/class-fl-theme-builder-rules-location.php:794
 #. translators: %s: singlular post type name
 msgctxt "%s is a singular post type name"
 msgid "%s Archives"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:796
+#: classes/class-fl-theme-builder-rules-location.php:803
 #. translators: %s: singlular post type name
 msgctxt "%s is a singular post type name"
 msgid "%s Archive"
 msgstr ""
 
-#: classes/class-fl-theme-builder-rules-location.php:825
+#: classes/class-fl-theme-builder-rules-location.php:832
 #. translators: 1: post type label, 2: taxonomy label
 msgctxt "%1$s is post type label. %2$s is taxonomy label."
 msgid "%1$s %2$s Archive"

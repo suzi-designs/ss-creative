@@ -169,12 +169,12 @@ final class FLThemeBuildeEDDArchive {
 			'fields' => array(
 				'edd_price_color'     => array(
 					'type'       => 'color',
-					'label'      => __( 'Download Price Text Color', 'fl-builder' ),
+					'label'      => __( 'Download Price Text Color', 'bb-theme-builder' ),
 					'show_reset' => true,
 				),
 				'edd_price_font_size' => array(
 					'type'        => 'text',
-					'label'       => __( 'Download Price Font Size', 'fl-builder' ),
+					'label'       => __( 'Download Price Font Size', 'bb-theme-builder' ),
 					'default'     => '',
 					'maxlength'   => '3',
 					'size'        => '4',
@@ -188,13 +188,13 @@ final class FLThemeBuildeEDDArchive {
 			'fields' => array(
 				'edd_button_bg_color'   => array(
 					'type'       => 'color',
-					'label'      => __( 'Background Color', 'fl-builder' ),
+					'label'      => __( 'Background Color', 'bb-theme-builder' ),
 					'default'    => '',
 					'show_reset' => true,
 				),
 				'edd_button_text_color' => array(
 					'type'       => 'color',
-					'label'      => __( 'Text Color', 'fl-builder' ),
+					'label'      => __( 'Text Color', 'bb-theme-builder' ),
 					'default'    => '',
 					'show_reset' => true,
 				),

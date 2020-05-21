@@ -3,7 +3,7 @@ return array(
 	'bc_form_typography' => array(
 		'type'       => 'typography',
 		'label'      => __( 'Cart Form Label Text', 'bb-theme-builder' ),
-		'help'       => __( 'Labels for cart form, i.e. "Quantity"', 'bb-theme-builder' ),
+		'help'       => __( 'Labels for Cart Form, i.e. "Quantity"', 'bb-theme-builder' ),
 		'responsive' => true,
 		'preview'    => array(
 			'type'     => 'css',

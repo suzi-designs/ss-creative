@@ -32,7 +32,7 @@ FLBuilder::register_module( 'FLBCProductReviewsModule', array(
 				'fields' => array(
 					'bc_reviews_title_typography' => array(
 						'type'       => 'typography',
-						'label'      => __( 'Product Reviews Title' ),
+						'label'      => __( 'Product Reviews Title', 'bb-theme-builder' ),
 						'help'       => __( 'Title text for product reviews module', 'bb-theme-builder' ),
 						'responsive' => true,
 						'preview'    => array(

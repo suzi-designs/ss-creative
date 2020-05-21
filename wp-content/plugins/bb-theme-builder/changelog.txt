@@ -1,3 +1,22 @@
+<h4>1.3.1 - 05/06/2020</h4>
+<p><strong>Enhancements</strong></p>
+<ul>
+	<li>Added new filter <code>fl_theme_builder_disable_schema</code>.</li>
+	<li>Added connections for Events Calendar venue and organiser content.</li>
+	<li>Added Conditional Tags -- is_404(), is_tax(), is_search() to Conditional Logic.</li>
+	<li>Added Author Role to Conditional Logic.</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+	<li>Fixed empty author name on Author Archive with no post.</li>
+	<li>Fixed ACF Relationship field sorting.</li>
+	<li>Fixed Posts module set to main query on an archive layout displays all Event Calendar events.</li>
+	<li>Fixed Add To Cart visibility on Archive Layout.</li>
+	<li>Fixed various translation string issues.</li>
+	<li>Remove Post Navigation extra space on RTL.</li>
+	<li>Make sure result is same post type when checking for post parent.</li>
+</ul>
+
 <h4>1.3.0.2 - 03/18/2020</h4>
 <p><strong>Enhancements</strong></p>
 <ul>

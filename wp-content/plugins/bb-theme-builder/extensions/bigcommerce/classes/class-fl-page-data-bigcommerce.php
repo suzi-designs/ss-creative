@@ -189,7 +189,7 @@ final class FLPageDataBigCommerce {
 			if ( $product->has_options() ) {
 				$component = View_Product_Button::factory( array(
 					View_Product_Button::PRODUCT => $product,
-					View_Product_Button::LABEL   => get_option( Buttons::CHOOSE_OPTIONS, __( 'Choose Options', 'bigcommerce' ) ),
+					View_Product_Button::LABEL   => get_option( Buttons::CHOOSE_OPTIONS, __( 'Choose Options', 'bb-theme-builder' ) ),
 				) );
 			} else {
 				$component = Product_Form::factory( array(

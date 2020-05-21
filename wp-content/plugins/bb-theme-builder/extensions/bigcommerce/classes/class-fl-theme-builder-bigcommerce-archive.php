@@ -325,7 +325,7 @@ final class FLThemeBuilderBigCommerceArchive {
 							'bc_sale_flash' => array(
 								'type'    => 'select',
 								'label'   => __( 'Product Sale', 'bb-theme-builder' ),
-								'help'    => __( 'Show a "SALE" badge when a product is marked as on sale.' ),
+								'help'    => __( 'Show a "SALE" badge when a product is marked as on sale.', 'bb-theme-builder' ),
 								'default' => 'show',
 								'options' => array(
 									'show' => __( 'Show', 'bb-theme-builder' ),

@@ -25,6 +25,7 @@ final class BB_Logic_Rules_WordPress {
 				'wordpress/author-login-status'  => __CLASS__ . '::author_logged_in',
 				'wordpress/author-meta'          => __CLASS__ . '::author_meta',
 				'wordpress/author'               => __CLASS__ . '::author',
+				'wordpress/author-role'          => __CLASS__ . '::author_role',
 				'wordpress/post-comments-number' => __CLASS__ . '::post_comments_number',
 				'wordpress/post-content'         => __CLASS__ . '::post_content',
 				'wordpress/post-excerpt'         => __CLASS__ . '::post_excerpt',
@@ -44,6 +45,7 @@ final class BB_Logic_Rules_WordPress {
 				'wordpress/user-role'            => __CLASS__ . '::user_role',
 				'wordpress/user-registered'      => __CLASS__ . '::user_registered',
 				'wordpress/user'                 => __CLASS__ . '::user',
+				'wordpress/conditional-tag'      => __CLASS__ . '::conditional_tag',
 			)
 		);
 	}
@@ -570,6 +572,27 @@ final class BB_Logic_Rules_WordPress {
 	}
 
 	/**
+	 * Author role rule.
+	 *
+	 * @since  0.1
+	 * @param object $rule
+	 * @return bool
+	 */
+	static public function author_role( $rule ) {
+		$post = self::get_post();
+		if ( $post ) {
+			$author_id = $post->post_author;
+			$user      = get_user_by( 'ID', $author_id );
+			$value     = in_array( $rule->compare, (array) $user->roles ) ? $rule->compare : '';
+			return BB_Logic_Rules::evaluate_rule( array(
+				'value'    => $value,
+				'operator' => $rule->operator,
+				'compare'  => $rule->compare,
+			) );
+		}
+	}
+
+	/**
 	 * User signup date rule.
 	 *
 	 * @since  0.1
@@ -597,6 +620,35 @@ final class BB_Logic_Rules_WordPress {
 			'value'    => $user->user_login ? $user->user_login : '',
 			'operator' => $rule->operator,
 			'compare'  => $rule->compare,
+		) );
+	}
+
+	/**
+	 * Conditional Tag rule.
+	 *
+	 * @since  1.0
+	 * @param object $rule
+	 * @return bool
+	 */
+	static public function conditional_tag( $rule ) {
+		$value = '';
+
+		if ( 'is_404' === $rule->compare ) {
+			$value = is_404();
+		} elseif ( 'is_home' === $rule->compare ) {
+			$value = is_home();
+		} elseif ( 'is_front_page' === $rule->compare ) {
+			$value = is_front_page();
+		} elseif ( 'is_tax' === $rule->compare ) {
+			$value = is_tax();
+		} elseif ( 'is_search' === $rule->compare ) {
+			$value = is_search();
+		}
+
+		return BB_Logic_Rules::evaluate_rule( array(
+			'value'    => $value,
+			'operator' => $rule->operator,
+			'compare'  => true,
 		) );
 	}
 }

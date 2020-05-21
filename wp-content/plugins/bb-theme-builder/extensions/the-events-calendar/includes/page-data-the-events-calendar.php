@@ -207,6 +207,16 @@ FLPageData::add_post_property( 'the_events_calendar_venue', array(
 ) );
 
 /**
+ * Event Venue Content
+ */
+FLPageData::add_post_property( 'the_events_calendar_venue_content', array(
+	'label'  => __( 'Event Venue Content', 'bb-theme-builder' ),
+	'group'  => 'the-events-calendar',
+	'type'   => 'string',
+	'getter' => 'FLPageDataTheEventsCalendar::venue_content',
+) );
+
+/**
  * Event Venue URL
  */
 FLPageData::add_post_property( 'the_events_calendar_venue_url', array(
@@ -254,6 +264,16 @@ FLPageData::add_post_property( 'the_events_calendar_organizer', array(
 	'group'  => 'the-events-calendar',
 	'type'   => 'string',
 	'getter' => 'tribe_get_organizer',
+) );
+
+/**
+ * Event Organizer Content
+ */
+FLPageData::add_post_property( 'the_events_calendar_organizer_content', array(
+	'label'  => __( 'Event Organizer Content', 'bb-theme-builder' ),
+	'group'  => 'the-events-calendar',
+	'type'   => 'string',
+	'getter' => 'FLPageDataTheEventsCalendar::organizer_content',
 ) );
 
 /**

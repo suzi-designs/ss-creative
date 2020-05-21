@@ -52,7 +52,7 @@ FLBuilder::register_module( 'FLEDDProductTitleModule', array(
 							'family' => 'Default',
 							'weight' => 300,
 						),
-						'label'   => __( 'Font', 'fl-builder' ),
+						'label'   => __( 'Font', 'bb-theme-builder' ),
 						'preview' => array(
 							'type'     => 'font',
 							'selector' => '.fl-module-content .edd_download_title',

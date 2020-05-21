@@ -303,7 +303,7 @@ FLPageData::add_post_property_settings_fields( 'terms_list', array(
 	'limit'     => array(
 		'type'        => 'text',
 		'placeholder' => '3',
-		'label'       => __( 'Limit', 'fl-theme-buider' ),
+		'label'       => __( 'Limit', 'bb-theme-builder' ),
 		'default'     => '',
 		'help'        => __( 'Limit number of terms returned.', 'bb-theme-builder' ),
 	),

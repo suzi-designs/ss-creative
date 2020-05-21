@@ -20,7 +20,7 @@ final class FLPageDataArchive {
 		} elseif ( is_tax() ) { // Taxonomy
 			$title = single_term_title( '', false );
 		} elseif ( is_author() ) { // Author
-			$title = get_the_author();
+			$title = get_the_author_meta( 'display_name', get_query_var( 'author' ) );
 		} elseif ( is_search() ) { // Search
 			/* translators: %s: Search results title */
 			$title = sprintf( _x( 'Search Results: %s', 'Search results title.', 'bb-theme-builder' ), get_search_query() );

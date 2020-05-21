@@ -3,7 +3,7 @@ return array(
 	'bc_refinery'                          => array(
 		'type'    => 'select',
 		'label'   => __( 'Product Search &amp; Filter', 'bb-theme-builder' ),
-		'help'    => __( 'Displays search, filter, and sort controls for products' ),
+		'help'    => __( 'Displays search, filter, and sort controls for products', 'bb-theme-builder' ),
 		'default' => 'hide',
 		'options' => array(
 			'show' => __( 'Show', 'bb-theme-builder' ),

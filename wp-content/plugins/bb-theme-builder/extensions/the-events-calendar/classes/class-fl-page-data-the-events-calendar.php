@@ -93,6 +93,22 @@ final class FLPageDataTheEventsCalendar {
 		return get_permalink( tribe_get_venue_id() );
 	}
 
+	/*
+	 * @since 1.3.1
+	 * @return string
+	 */
+	static public function organizer_content() {
+		return apply_filters( 'the_content', get_the_content( null, false, tribe_get_organizer_id() ) );
+	}
+
+	/*
+	 * @since 1.3.1
+	 * @return string
+	 */
+	static public function venue_content() {
+		return apply_filters( 'the_content', get_the_content( null, false, tribe_get_venue_id() ) );
+	}
+
 	/**
 	 * @since TBD
 	 * @return string

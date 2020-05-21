@@ -46,9 +46,9 @@ final class FLThemeBuilder {
 		// Traditional WordPress plugin locale filter
 		// Uses get_user_locale() which was added in 4.7 so we need to check its available.
 		if ( function_exists( 'get_user_locale' ) ) {
-			$locale = apply_filters( 'plugin_locale', get_user_locale(), 'fl-theme-builder' );
+			$locale = apply_filters( 'plugin_locale', get_user_locale(), 'bb-theme-builder' );
 		} else {
-			$locale = apply_filters( 'plugin_locale', get_locale(), 'fl-theme-builder' );
+			$locale = apply_filters( 'plugin_locale', get_locale(), 'bb-theme-builder' );
 		}
 
 		// Setup paths to current locale file
@@ -57,10 +57,10 @@ final class FLThemeBuilder {
 
 		if ( file_exists( $mofile_global ) ) {
 			// Look in global /wp-content/languages/plugins/bb-plugin/ folder
-			return load_textdomain( 'fl-theme-builder', $mofile_global );
+			return load_textdomain( 'bb-theme-builder', $mofile_global );
 		} elseif ( file_exists( $mofile_local ) ) {
 			// Look in local /wp-content/plugins/bb-plugin/languages/ folder
-			return load_textdomain( 'fl-theme-builder', $mofile_local );
+			return load_textdomain( 'bb-theme-builder', $mofile_local );
 		}
 
 		// Nothing found

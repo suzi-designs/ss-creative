@@ -35,7 +35,7 @@ final class FLThemeBuilderACF {
 			return $field;
 		}
 
-		$field['options']['acf_relationship'] = __( 'ACF Relationship', 'fl-builder' );
+		$field['options']['acf_relationship'] = __( 'ACF Relationship', 'bb-theme-builder' );
 		$field['toggle']['acf_relationship']  = array(
 			'fields' => array( 'data_source_acf_relational_type', 'data_source_acf_relational_key', 'posts_per_page' ),
 		);
@@ -102,7 +102,7 @@ final class FLThemeBuilderACF {
 
 					// Order by meta value arg.
 					if ( strstr( $settings->data_source_acf_order_by, 'meta_value' ) ) {
-						$args['meta_key'] = $settings->order_by_meta_key;
+						$args['meta_key'] = $settings->data_source_acf_order_by_meta_key;
 					}
 
 					// Order by author
@@ -139,11 +139,11 @@ final class FLThemeBuilderACF {
 
 			FLBuilder::render_settings_field('data_source_acf_relational_type', array(
 				'type'    => 'select',
-				'label'   => __( 'Type', 'fl-builder' ),
+				'label'   => __( 'Type', 'bb-theme-builder' ),
 				'default' => 'relationship',
 				'options' => array(
-					'relationship' => __( 'Relationship', 'fl-builder' ),
-					'user'         => __( 'User', 'fl-builder' ),
+					'relationship' => __( 'Relationship', 'bb-theme-builder' ),
+					'user'         => __( 'User', 'bb-theme-builder' ),
 				),
 				'toggle'  => array(
 					'relationship' => array(
@@ -154,7 +154,7 @@ final class FLThemeBuilderACF {
 
 			FLBuilder::render_settings_field('data_source_acf_relational_key', array(
 				'type'  => 'text',
-				'label' => __( 'Key', 'fl-builder' ),
+				'label' => __( 'Key', 'bb-theme-builder' ),
 			), $settings);
 
 			// Order

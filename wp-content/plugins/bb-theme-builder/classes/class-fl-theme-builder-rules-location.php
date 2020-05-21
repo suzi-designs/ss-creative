@@ -311,7 +311,7 @@ final class FLThemeBuilderRulesLocation {
 					foreach ( $post['locations'] as $post_location ) {
 						if ( stristr( $post_location, ':post:' ) ) {
 							$parts = explode( ':', $post_location );
-							if ( 5 === count( $parts ) && wp_get_post_parent_id( $post_id ) == $parts[4] ) {
+							if ( 5 === count( $parts ) && wp_get_post_parent_id( $post_id ) == $parts[4] && get_post_type( wp_get_post_parent_id( $post_id ) ) == $parts[3] ) {
 								$posts[] = $post;
 							}
 						} elseif ( stristr( $post_location, ':ancestor:' ) ) {

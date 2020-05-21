@@ -52,3 +52,7 @@
 	color: #<?php echo $settings->woo_button_text_color; ?>;
 }
 <?php endif; ?>
+
+.fl-node-<?php echo $id; ?> .fl-post-module-woo-button a.button {
+	display: <?php echo ( 'show' === $settings->woo_button ) ? 'inline-block' : 'none'; ?>;
+}
