@@ -1,0 +1,2 @@
+
+(function($){$(function(){new FLBuilderMenu({id:'5ee1316976e7b',type:'horizontal',mobile:'hamburger',mobileBelowRow:false,mobileFlyout:false,breakPoints:{medium:992,small:768},mobileBreakpoint:'mobile'});});})(jQuery);
